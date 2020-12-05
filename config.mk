@@ -16,7 +16,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 ifeq ($(EXTRA_FOD_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
-    FodAnimationResources
+    FodAnimations
 endif
 
 ifeq ($(TARGET_HAS_FOD),true)
