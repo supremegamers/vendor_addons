@@ -14,15 +14,15 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-ifeq ($(EXTRA_FOD_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    FodAnimations
-endif
+#ifeq ($(EXTRA_FOD_ANIMATIONS),true)
+#PRODUCT_PACKAGES += \
+#    FodAnimations
+#endif
 
-ifeq ($(TARGET_HAS_FOD),true)
-DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-icons
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod-icons
-endif
+#ifeq ($(TARGET_HAS_FOD),true)
+#DEVICE_PACKAGE_OVERLAYS += vendor/addons/overlay/fod-icons
+#PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/addons/overlay/fod-icons
+#endif
 
 #nexus/pixel sysconfigs
 PRODUCT_COPY_FILES += \
